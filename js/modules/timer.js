@@ -1,7 +1,5 @@
-function timer () {
+function timer (id, deadLine) {
     // timer
-
-    const deadLine = '2023-11-10';
 
     function getTimeRemaining(endtime) {
         let days, hours, minutes, seconds;
@@ -59,7 +57,7 @@ function timer () {
         }
     }
 
-    setClock('.timer', deadLine);
+    setClock(id, deadLine);
 }
 
-module.exports = timer;
+export default timer;
